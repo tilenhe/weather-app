@@ -4,10 +4,6 @@ const submit = document.getElementById("submit");
 const div = document.querySelector("div");
 submit.addEventListener("click", getData);
 
-function toCelsius(k) {
-  k = k - 273.15;
-}
-
 async function getData(e) {
   e.preventDefault();
   const response = await fetch(
